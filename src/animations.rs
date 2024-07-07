@@ -114,7 +114,7 @@ impl Animation for Rainbow {
                 let l_1 = (x_t - (b_1 / b_2 * y_t)) / (a_1 - (b_1 / b_2 * a_2));
 
                 // let hue = x as f32 / frame.x as f32;
-                let hue = l_1;
+                let hue = l_1
                 let hue = (hue + self.color_shift).rem_euclid(1.0);
 
                 let hsv_color = HSVColor {
